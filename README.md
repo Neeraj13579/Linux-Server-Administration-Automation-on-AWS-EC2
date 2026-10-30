@@ -1,4 +1,4 @@
-# 🐧 Linux Server Administration & Automation on AWS EC2
+# Linux Server Administration & Automation on AWS EC2
 
 <p align="center">
   <img src="https://img.shields.io/badge/OS-Amazon%20Linux%202023-orange?style=for-the-badge&logo=linux&logoColor=white" alt="Amazon Linux 2023">
