@@ -402,8 +402,8 @@ The complete project documentation, including implementation details and practic
 
 Linux Server Administration | AWS | Bash Scripting | Cloud & Automation
 
-- LinkedIn: [Add Your LinkedIn Profile](https://www.linkedin.com/)
-- GitHub: [Add Your GitHub Profile](https://github.com/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/neerajkumar45/)
+- GitHub: [GitHub](https://github.com/Neeraj13579)
 
 ---
 
