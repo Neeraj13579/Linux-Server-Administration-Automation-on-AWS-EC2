@@ -273,7 +273,7 @@ Linux-Server-Administration-Automation-on-AWS-EC2/
 ├── README.md
 │
 ├── docs/
-│   └── Project-Report.docx
+│   └── Project-Report.pdf
 │
 ├── scripts/
 │   ├── setup_users_permissions.sh
@@ -392,7 +392,7 @@ The project can be extended with additional Linux administration and cloud autom
 
 The complete project documentation, including implementation details and practical screenshots, is available in:
 
-`Project_Docs/Project-Report.docx`
+`Project_Docs/Project-Report.pdf`
 
 ---
 
