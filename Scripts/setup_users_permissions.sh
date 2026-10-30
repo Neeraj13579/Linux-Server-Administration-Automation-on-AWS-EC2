@@ -3,19 +3,26 @@
 # Run as root: sudo bash setup_users_permissions.sh
 set -e
 
-groupadd -f developers
-groupadd -f managers
+groupadd  developers
+groupadd  managers
 
 id alice   &>/dev/null || useradd -m -g developers -s /bin/bash alice
 id bob     &>/dev/null || useradd -m -g developers -s /bin/bash bob
 id charlie &>/dev/null || useradd -m -g managers   -s /bin/bash charlie
 
-# Generate random passwords (never hard-code passwords in a public repo)
-for u in alice bob charlie; do
-  pw=$(openssl rand -base64 12)
-  echo "$u:$pw" | chpasswd
-  echo "Password for $u: $pw   (save it, shown only once)"
-done
+# Set passwords
+echo "alice:Alice@123" | chpasswd
+echo "bob:Bob@123" | chpasswd
+echo "charlie:Charlie@123" | chpasswd
+
+# Verify users created
+cat /etc/passwd | grep -E "alice|bob|charlie"
+cat /etc/group | grep -E "developers|managers"
+
+# Check user IDs
+id alice
+id bob
+id charlie
 
 mkdir -p /project/{dev,manager,shared}
 chown -R root:developers /project/dev
